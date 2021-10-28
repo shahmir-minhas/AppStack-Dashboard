@@ -1,14 +1,19 @@
 if (window.outerWidth <= 768 || window.innerWidth <= 768) {
-  document.getElementById("sidebar").classList.remove("show")
-} else {
-  document.getElementById("sidebar").classList.add("show")
+  document.getElementById("sidebar").classList.remove("show");
+  document.getElementById("sidebar").classList.add("w-100");
 }
+// else {
+//   document.getElementById("sidebar").classList.add("show");
+//   document.getElementById("sidebar").classList.remove("w-100");
+// }
 
 window.addEventListener('resize', function(event) {
   if (event.target.outerWidth <= 768 || event.target.innerWidth <= 768) {
-    document.getElementById("sidebar").classList.remove("show")
+    document.getElementById("sidebar").classList.remove("show");
+    document.getElementById("sidebar").classList.add("w-100");
   } else {
-    document.getElementById("sidebar").classList.add("show")
+    document.getElementById("sidebar").classList.add("show");
+    document.getElementById("sidebar").classList.remove("w-100");
   }
 });
 
